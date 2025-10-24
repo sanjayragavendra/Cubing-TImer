@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #61dafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #3a404a;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* No specific style for #scramble as it's now an image and text */
+
+#timer {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #fff;
+}
+
+button {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #4fa3d1;
+}
+
+#timesList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #4fa3d1;
+    padding-top: 10px;
+    text-align: left;
+}
+
+#timesList li {
+    background-color: #4a5059;
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#timesList li button {
+    background-color: #dc3545; /* Red for delete button */
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    margin: 0; /* Override margin from general button style */
+}
+
+#timesList li button:hover {
+    background-color: #c82333;
+}
